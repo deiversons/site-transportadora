@@ -1,1 +1,92 @@
 # site-transportadora
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobalTrans — Transporte de Excelência</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f5f7fa; color: #333; }
+    header { background: #0b2c4d; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 24px; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { background: linear-gradient(rgba(11,44,77,.7), rgba(11,44,77,.7)), url('https://images.unsplash.com/flagged/photo-1552410260-0fd9b577afa6'); background-size: cover; background-position: center; color: #fff; padding: 100px 40px; text-align: center; }
+    .hero h2 { font-size: 42px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+    .hero button { padding: 15px 30px; font-size: 16px; background: #ffb703; border: none; cursor: pointer; border-radius: 4px; }
+    .hero button:hover { background: #e0a600; }
+    section { padding: 60px 40px; max-width: 1200px; margin: auto; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #fff; padding: 30px; border-radius: 6px; box-shadow: 0 4px 10px rgba(0,0,0,.1); }
+    .card h3 { margin-bottom: 10px; color: #0b2c4d; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .about img { width: 100%; border-radius: 6px; }
+    .cta { background: #0b2c4d; color: #fff; text-align: center; padding: 60px 40px; }
+    .cta h2 { margin-bottom: 20px; }
+    footer { background: #081f36; color: #ccc; padding: 30px 40px; text-align: center; }
+    @media (max-width: 768px) {
+      .about { grid-template-columns: 1fr; }
+      .hero h2 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GlobalTrans</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>A Melhor Transportadora do Mundo</h2>
+    <p>Logística inteligente, rápida e segura em qualquer lugar.</p>
+    <button>Solicitar Cotação</button>
+  </section>
+
+  <section id="servicos">
+    <h2>Nossos Serviços</h2><br>
+    <div class="services">
+      <div class="card">
+        <h3>Transporte Rodoviário</h3>
+        <p>Entregas rápidas e seguras em todo o território nacional.</p>
+      </div>
+      <div class="card">
+        <h3>Transporte Internacional</h3>
+        <p>Conectando países com eficiência e confiança.</p>
+      </div>
+      <div class="card">
+        <h3>Logística Integrada</h3>
+        <p>Gestão completa da sua cadeia logística.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="about">
+      <div>
+        <h2>Sobre a GlobalTrans</h2>
+        <p>Somos referência mundial em transporte e logística, combinando tecnologia, experiência e compromisso com nossos clientes.</p>
+        <p>Atuamos com excelência, transparência e foco total em resultados.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59" alt="Caminhões" />
+    </div>
+  </section>
+
+  <section class="cta" id="contato">
+    <h2>Pronto para transportar com os melhores?</h2>
+    <p>Entre em contato e peça sua cotação agora mesmo.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 GlobalTrans — Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
